@@ -1,3 +1,4 @@
+import _ from 'lodash';
 import { home } from "./home"
 
 window.onload = () => {
