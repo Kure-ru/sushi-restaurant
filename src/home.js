@@ -5,7 +5,7 @@ const home = () => {
     const container = document.querySelector('#content')
 
     const headerImg = document.createElement("img")
-    headerImg.src = "../src/assets/header-pic.png"
+    headerImg.src = "assets/header-pic.png"
     headerImg.alt = "chopsticks holding a sushi"
 
     const headerTitle = document.createElement("h1")

@@ -5,7 +5,7 @@ const about = () => {
     const container = document.querySelector('#content')
 
     const aboutImg = document.createElement("img")
-    aboutImg.src = "../src/assets/futomaki.png"
+    aboutImg.src = "assets/futomaki.png"
     aboutImg.alt = "futomaki sushi"
 
     const aboutTitle = document.createElement("h1")

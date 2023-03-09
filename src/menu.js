@@ -4,7 +4,7 @@ function createItem(name) {
     const foodContainer = document.createElement("section")
 
     const foodImg = document.createElement("img")
-    foodImg.src = `../src/assets/${name}.png`
+    foodImg.src = `assets/${name}.png`
     foodImg.alt = `${name} sushi`
 
     const foodName = document.createElement("h2")
