@@ -1,1 +1,1 @@
-# sushi-restaurant
+# Sushi restaurant
