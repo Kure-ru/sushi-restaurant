@@ -1,0 +1,34 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the home page.
+// -----------------------------------------------------------------------------
+
+.home {
+    height: 100svh;
+    display: flex;
+    img {
+        margin-top: -50px;
+
+    }
+    div {
+        max-height: calc(100svh - 100px);
+        padding: 5%;
+
+        p {
+            padding: 2rem;
+        }
+        
+        button {
+            background: $black;
+            color: $white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 30px;
+        }
+
+        button:hover {
+            background: $grey;
+            cursor: pointer;
+        }
+    }
+
+}

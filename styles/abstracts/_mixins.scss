@@ -1,0 +1,18 @@
+// source: pepelsbey/hocus.scss
+@mixin hocus($color) {
+    &:hover,
+    &:focus {
+        @content;
+        color: $color;
+        cursor: pointer;
+     }
+    }
+
+@mixin hocus--background($bg-color){
+    &:hover,
+    &:focus {
+        @content;
+        background: $bg-color;
+     }
+}
+

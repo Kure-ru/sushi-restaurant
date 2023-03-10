@@ -1,0 +1,15 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+
+nav {
+    height: $header-height;
+    display: flex;
+    justify-content: flex-end;
+    padding: 8px;
+
+    span {
+        padding: 8px 16px;
+        @include hocus($sanguine-red)  
+}
+}

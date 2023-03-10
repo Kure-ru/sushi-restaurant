@@ -1,0 +1,32 @@
+// || Font family
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+  /// @type List
+$text-font: 'Roboto', sans-serif;
+
+/// 
+
+// || Colors ||
+
+$sanguine-red: rgb(161, 46, 56);
+$light-brown: rgb(252, 241, 224);	
+$white: #fff;
+$black: #000;
+$grey: #6d6d6d;
+
+/// Breakpoints map
+/// @prop {String} keys - Keys are identifiers mapped to a given length
+/// @prop {Map} values - Values are actual breakpoints expressed in pixels
+$breakpoints: (
+  'small': 320px,
+  'medium': 768px,
+  'large': 1024px,
+) !default;
+
+/// Container's maximum width
+/// @type Length
+$max-width: 1180px !default;
+
+//Sizes
+$header-height: 50px;

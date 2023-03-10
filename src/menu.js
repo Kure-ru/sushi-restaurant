@@ -18,21 +18,26 @@ function createItem(name) {
 const loadMenu = () => {
     console.log('loading menu...')
     const container = document.querySelector('#content')
-    header()
-    // container.appendChild(menu())
-    const menuContainer = document.createElement("main")
     
+    header()
+
+    const menuContainer = document.createElement("main")
+    menuContainer.classList.add('menu')
+
+    const menuGrid = document.createElement('div')
+
     const menuTitle = document.createElement("h1")
     menuTitle.textContent = "Menu"
     
     container.appendChild(menuContainer)
     menuContainer.appendChild(menuTitle)
-    menuContainer.appendChild(createItem('ebi'))
-    menuContainer.appendChild(createItem('saba'))
-    menuContainer.appendChild(createItem('hamachi'))
-    menuContainer.appendChild(createItem('ika'))
-    menuContainer.appendChild(createItem('ikura'))
-    menuContainer.appendChild(createItem('maguro'))
+    menuContainer.appendChild(menuGrid)
+    menuGrid.appendChild(createItem('ebi'))
+    menuGrid.appendChild(createItem('saba'))
+    menuGrid.appendChild(createItem('hamachi'))
+    menuGrid.appendChild(createItem('ika'))
+    menuGrid.appendChild(createItem('ikura'))
+    menuGrid.appendChild(createItem('maguro'))
     
 }
 

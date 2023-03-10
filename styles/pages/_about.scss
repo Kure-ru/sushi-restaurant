@@ -1,0 +1,18 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    img {
+        max-width: 200px;
+    }
+
+    span {
+        color: $sanguine-red;
+    }
+
+    p {
+        padding: 1rem 200px;
+    }
+}

@@ -1,0 +1,31 @@
+@use "sass:color";
+
+.menu {
+    background: $sanguine-red;
+    height: calc(100lvb - 50px);
+
+    h1 {
+        color: $white;
+        padding: 2rem 0;
+    }
+
+    div {
+        padding: 0 100px;
+        display: grid;
+        grid-template-columns: 200px 200px 200px;
+        grid-template-rows: 250px 250px;
+        gap: 10%;
+    }
+    section {
+        background: $white;
+        border-radius: 15px;
+        @include hocus--background(transparentize($white, 0.8));
+        border: 1px solid $white;
+
+        img {
+      margin: 1rem auto;
+        }
+
+        
+    }
+}
