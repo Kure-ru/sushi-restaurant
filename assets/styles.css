@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"); /* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+body {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+span {
+  text-transform: uppercase;
+}
+
+/**
+ * Main content containers
+ * 1. Make the container full-width with a maximum width
+ * 2. Center it in the viewport
+ * 3. Leave some space on the edges, especially valuable on small screens
+ */
+.container {
+  max-width: 1180px; /* 1 */
+  margin-left: auto; /* 2 */
+  margin-right: auto; /* 2 */
+  padding-left: 20px; /* 3 */
+  padding-right: 20px; /* 3 */
+  width: 100%; /* 1 */
+}
+
+/**
+ * Hide text while making it readable for screen readers
+ * 1. Needed in WebKit-based browsers because of an implementation bug;
+ *    See: https://code.google.com/p/chromium/issues/detail?id=457146
+ */
+.hide-text {
+  overflow: hidden;
+  padding: 0; /* 1 */
+  text-indent: 101%;
+  white-space: nowrap;
+}
+
+/**
+ * Hide element while making it readable for screen readers
+ * Shamelessly borrowed from HTML5Boilerplate:
+ * https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css#L119-L133
+ */
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+nav {
+  height: 50px;
+  display: flex;
+  justify-content: flex-end;
+  padding: 8px;
+}
+nav span {
+  padding: 8px 16px;
+}
+nav span:hover, nav span:focus {
+  color: rgb(161, 46, 56);
+  cursor: pointer;
+}
+
+.home {
+  height: 100svh;
+  display: flex;
+}
+.home img {
+  margin-top: -50px;
+}
+.home div {
+  max-height: calc(100svh - 100px);
+  padding: 5%;
+}
+.home div p {
+  padding: 2rem;
+}
+.home div button {
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 30px;
+}
+.home div button:hover {
+  background: #6d6d6d;
+  cursor: pointer;
+}
+
+.menu {
+  background: rgb(161, 46, 56);
+  height: calc(100lvb - 50px);
+}
+.menu h1 {
+  color: #fff;
+  padding: 2rem 0;
+}
+.menu div {
+  padding: 0 100px;
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  grid-template-rows: 250px 250px;
+  gap: 10%;
+}
+.menu section {
+  background: #fff;
+  border-radius: 15px;
+  border: 1px solid #fff;
+}
+.menu section:hover, .menu section:focus {
+  background: rgba(255, 255, 255, 0.2);
+}
+.menu section img {
+  margin: 1rem auto;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.about img {
+  max-width: 200px;
+}
+.about span {
+  color: rgb(161, 46, 56);
+}
+.about p {
+  padding: 1rem 200px;
+}
+
+/*# sourceMappingURL=styles.css.map */
